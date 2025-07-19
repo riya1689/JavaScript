@@ -1,0 +1,5 @@
+function type:
+1.Has return and Has parameter
+2.Has return and no parameter
+3.No Return and Has parameter
+4.No Return and No parameter
