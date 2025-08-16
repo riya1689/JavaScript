@@ -1,0 +1,7 @@
+IP Address: a uniqe address that identifies a device on internet or a local network.
+
+IPv4(32 bit) vs IPv6(128 bit)
+
+DNS (Domain Name System) translate domain names to IP address so browser can load internet resources
+    Its one kind phonebook of internet
+    01749822000 --> zian's home

@@ -1,0 +1,28 @@
+1.internet
+2.how internet works?
+3.API
+4.GET, 
+5.POST
+6.JSON
+7.JSON Parse
+8.Stringify
+9.data load
+10.GET VS POST
+11.Status Code
+12.IP Address: a uniqe address that identifies a device on internet or a local network.
+13.IPv4(32 bit) vs IPv6(128 bit)
+14.DNS (Domain Name System) translate domain names to IP address so browser can load internet resources
+    Its one kind phonebook of internet
+    01749822000 --> zian's home
+
+    Data split into packet and goes/sends to end user.
+    one of the sending process or system is HTTP.
+    HTTP layer.
+    7 layers of the OSI Model
+    1.Application
+    2.Presentation
+    3.Session
+    4.Transport
+    5.network
+    6.Data Link
+    7.Physical

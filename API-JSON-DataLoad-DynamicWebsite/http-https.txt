@@ -1,0 +1,34 @@
+server is a computer or software that provides service to another computer or device.
+1.store data
+2.process request
+3.send data , file
+
+Client -> API -> Server ->Database ->server ->API ->Client
+
+Data split into packet and goes/sends to end user.
+    one of the sending process or system is HTTP.
+    HTTP layer.
+    7 layers of the OSI Model
+    1.Application
+    2.Presentation
+    3.Session
+    4.Transport
+    5.network
+    6.Data Link
+    7.Physical
+          
+          HTTP 
+
+1.Hyper Text Transfer Protocol
+2.Works at the application layer
+3.default port for communication 80
+4.No encryption Present
+
+
+               HTTPS
+
+1.Hyper Text Transfer Protocol Secure
+2.Works at the transport layer
+3.default port(door number of server) for communication 443
+4.encryption Present
+
