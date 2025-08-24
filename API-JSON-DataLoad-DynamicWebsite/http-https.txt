@@ -32,3 +32,13 @@ Data split into packet and goes/sends to end user.
 3.default port(door number of server) for communication 443
 4.encryption Present
 
+
+HTTP status Code
+
+200   ---->  OK
+301   ---->  moved permanently
+302   ---->  moved temporarily
+404   ---->  Not found
+500   ---->  Internal Server Error
+503   ---->  Service Unavailable
+

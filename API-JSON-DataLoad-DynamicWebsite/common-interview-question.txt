@@ -1,0 +1,11 @@
+1.what is an API?
+2.what are the HTTP methods supported by REST?
+3.Can you use Get request instead of PUT to create a resource?
+4.What is the difference between PUT and POST?
+5.What is JSON?
+6.What are CRUD operations?
+7.what is the extension of JSON?
+8.What are the data types supported by JSON?
+9.What is the role of JSON.stringify?
+10.Show how to parse a JSON?
+11.Tell us the difference between GET and POST?
