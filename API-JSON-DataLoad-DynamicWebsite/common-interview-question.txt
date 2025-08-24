@@ -1,11 +1,61 @@
 1.what is an API?
+-> An API (Application Programming Interface) is a set of rules that allows different software
+applications to communicate with each other. For web APIs, it lets clients (like a frontend app) talk to servers.
 2.what are the HTTP methods supported by REST?
+->Common REST methods:
+
+GET → Retrieve data
+
+POST → Create new data
+
+PUT → Update/replace existing data
+
+PATCH → Partially update data
+
+DELETE → Remove data
+
+(Others like HEAD, OPTIONS exist but are less common)
 3.Can you use Get request instead of PUT to create a resource?
+->No. GET is for retrieving data and should not change server state. PUT/POST are used for creating/updating resources.
+ Using GET for creation breaks REST principles and caching mechanisms.
 4.What is the difference between PUT and POST?
+->POST → Creates a new resource
+  PUT → Creates or replaces a resource at a specific URL (client usually provides the ID).
 5.What is JSON?
+->JavaScript Object Notation(JSON) a text based format to store data and data exchange.Written with 
+key-value pair,and data formate stringifiy
 6.What are CRUD operations?
+CRUD stands for the four basic database operations:
+Create, Read, Update, Delete
 7.what is the extension of JSON?
+->.json
 8.What are the data types supported by JSON?
+->String, Number, Boolean, Null, Object (key-value pairs), Array
 9.What is the role of JSON.stringify?
+->converts a JavaScript object into a JSON string.
 10.Show how to parse a JSON?
+->convert JSON string → JavaScript object.
+let str = '{"name":"Riya","age":24}';
+let obj = JSON.parse(str);
+console.log(obj.name); // Riya
+
 11.Tell us the difference between GET and POST?
+GET
+
+Used for fetching data.
+
+Parameters sent in URL (query string).
+
+Idempotent (repeating same request won’t change data).
+
+Cacheable.
+
+POST
+
+Used for creating data.
+
+Parameters sent in request body.
+
+Not idempotent (repeating may create duplicates).
+
+Not cacheable by default.
