@@ -1,0 +1,10 @@
+1.JavaScript Engine V8 internal mechanisms
+2.JavaScript Execution context and call Stack
+3.Single-threaded,asynchronous,synchronous
+4.promise,async,await
+5.setinterval and clearinterval
+6.JavaScript event loop and concurrency
+7.Error handling:try,catch,throw and finally
+8.Explore more about async/await and promise allows
+9.JS event loop
+10.Frying the concept of JS event loop
