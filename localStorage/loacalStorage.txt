@@ -1,0 +1,17 @@
+dev tool -> application -> local storage ->user er behaviour rakhar jonno
+
+esc local storage
+local storage.getitem()--- kon namer variable pete chao.string akara nite hbe.('')
+localstorage.remove()
+
+local storage set item(duita parameter)string akaray ki name ache.local storage sob 
+.clear, .length()
+
+array ba object sorasori localStorage.setitem kora jay na
+without log in any website data store here.
+dev tool -> application -> local storage ->
+array , object k sorasori string e convert kore JSON.stringify(person)
+objedt k string represent e kora
+typeof string
+JSON.parse()->string to object
+
