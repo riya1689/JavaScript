@@ -1,0 +1,401 @@
+object limitation
+
+only character and string
+not allowed any key
+const course1 = { name: "Programming Hero" };
+this is an object
+
+obj[course1] ={courseId : "level1"};
+console.log(obj);
+etar ans '[object object]' : {courseId : 'level1'}; emn kno ase
+
+console.log(obj["object object"]) korle 
+op -> {courseId : 'level1'} ase kno? obj obj name to kichu declare korlam na.
+
+
+1. // code block
+const course1 ={name: "programming hero"};
+const course2 ={name: "Next level"};
+
+const obj ={};
+
+
+obj.nextlevel ={courseId : "level2"};
+obj[course1] ={courseId : "level1"};
+
+console.log(obj);
+
+
+op -> {
+    nextlevel : {courseId : "level2"},
+    '[object Object]' : {courseId : 'level1'} <- course1 variable er value obj, er vetore rakte chacchi rakhte chacchi obj
+
+}
+
+ekta object er starting letter small , arekta letter capital kno  [object Object]?
+
+
+2. // code block
+const course1 ={name: "programming hero"};
+const course2 ={name: "Next level"};
+
+const obj ={};
+
+obj.nextlevel ={courseId : "level2"};
+obj[course1] ={courseId : "level1"};
+
+console.log(obj["object Object]); <- access kora jacche
+
+op -> 
+    {courseId : "level1"}
+
+3. // code block
+const course1 ={name: "programming hero"};
+const course2 ={name: "Next level"};
+
+const obj ={};
+
+obj.[course2] ={courseId : "level2"};
+obj[course1] ={courseId : "level1"};
+
+console.log(obj["object Object]);
+
+etar ans ki hbe?
+
+4. // code block
+const course1 ={name: "programming hero"};
+const course2 ={name: "Next level"};
+
+const obj ={};
+
+obj[course2] ={courseId : "level2"};
+obj[course1] ={courseId : "level1"};
+
+console.log(obj["object Object]);
+
+etar anss ki hbe?
+
+5. // code block
+const course1 ={name: "programming hero"};
+const course2 ={name: "Next level"};
+
+const obj ={};
+
+obj.[course2] ={courseId : "level2"};
+obj[course1] ={courseId : "level1"};
+
+console.log(obj);
+
+etar ans ki hbe? 
+
+
+6. // code block
+const course1 ={name: "programming hero"};
+const course2 ={name: "Next level"};
+
+const obj ={};
+
+obj[course2] ={courseId : "level2"}; <- mark 
+obj[course1] ={courseId : "level1"}; <- mark
+
+console.log(obj);
+op ->
+{'[object Object]' : {name: "Next level"} } <- etar ans ekdomi bujhi ni
+ekhane duita alada alada value kintu key same.
+
+oporer bisoy ta limitation. eta overcome kora jaay  using map 
+
+map key value pair akare input ney. jekono data type er value initialize kora jabe.
+
+7.//code block
+const course1 ={name: "programming hero"};
+const course2 ={name: "Next level"};
+
+const map = new Map(); <- new keyword use kore Map generate korte hbe.
+console.log(map);
+
+op ->
+
+Map() {}  <-  size kto ar value diye dibe.
+
+8.//code block
+const course1 ={name: "programming hero"};
+const course2 ={name: "Next level"};
+
+const map = new Map(); <- new keyword use kore Map generate korte hbe.
+map.set(1, "library card");  <-(key, value)
+console.log(map);
+
+op ->
+
+Map(1) {1 => 'programming hero'}
+
+9.//code block
+const course1 ={name: "programming hero"};
+const course2 ={name: "Next level"};
+
+const map = new Map(); <- new keyword use kore Map generate korte hbe.
+map.set(false, "library card");  <-(key, value)
+console.log(map);
+
+op ->
+
+Map(1) {false => 'programming hero'} <- ekhane key (property) string e convert hoy ni .
+
+10.//code block
+const course1 ={name: "programming hero"};
+const course2 ={name: "Next level"};
+
+const map = new Map(); <- new keyword use kore Map generate korte hbe.
+map.set(course1, {courseId : "level1"});
+map.set(course2, {courseId : "level2"});
+console.log(map);
+
+op ->
+Map(2) {
+    {name: 'programming Hero'} => {courseId: 'level1'},
+    {name: 'next level development'} => {courseId : 'level2'}
+}
+
+11.map.clear(); 
+op -> Map(0) {}   <- all clear
+
+12.//code block
+const course1 ={name: "programming hero"};
+const course2 ={name: "Next level"};
+
+const map = new Map(); <- new keyword use kore Map generate korte hbe.
+map.set(course1, {courseId : "level1"});
+map.set(course2, {courseId : "level2"});
+console.log(map.size);
+op -> 2
+
+13.//code block
+const course1 ={name: "programming hero"};
+const course2 ={name: "Next level"};
+
+const map = new Map(); <- new keyword use kore Map generate korte hbe.
+map.set(course1, {courseId : "level1"});
+map.set(course2, {courseId : "level2"});
+map.delete(course1);
+console.log(map);
+op ->
+Map(1){
+    {name: "Next level"} => {courseId : "level2"}
+}
+
+14.//code block
+const course1 ={name: "programming hero"};
+const course2 ={name: "Next level"};
+
+const map = new Map(); <- new keyword use kore Map generate korte hbe.
+map.set(course1, {courseId : "level1"});
+map.set(course2, {courseId : "level2"});
+
+console.log(map.has(course1));
+op ->
+true
+
+15.//code block
+const course1 ={name: "programming hero"};
+const course2 ={name: "Next level"};
+
+const map = new Map(); <- new keyword use kore Map generate korte hbe.
+map.set(course2, {courseId : "level2"});
+
+console.log(map.has(course1));
+op ->
+false
+
+
+16.//code block
+const course1 ={name: "programming hero"};
+const course2 ={name: "Next level"};
+
+const map = new Map(); <- new keyword use kore Map generate korte hbe.
+map.set(course2, {courseId : "level2"});
+
+console.log(map.has(course1));
+op ->
+false
+
+
+for iterate perspective  in map..   only one iterate method
+
+map.forEach()
+
+17.//code block
+const course1 ={name: "programming hero"};
+const course2 ={name: "Next level"};
+
+const map = new Map(); <- new keyword use kore Map generate korte hbe.
+map.set(course1, {courseId : "level1"});
+map.set(course2, {courseId : "level2"});
+
+map.forEach((value, key) => console.log("Key: ,key, "Value: ", value));  <- not perceived
+
+op -> 
+
+Key: {name: "programming hero"} Value: {courseId : 'level1'}
+Key: {name: "Next level"} Value: {courseId : 'level2'}
+
+
+
+18.//code block
+const course1 ={name: "programming hero"};
+const course2 ={name: "Next level"};
+
+const map = new Map(); <- new keyword use kore Map generate korte hbe.
+map.set(course1, {courseId : "level1"});
+map.set(course2, {courseId : "level2"});
+
+map.forEach((value, key) => (key.name = "Sohoz Shorol Simple" + key.name)); <- eta bujhi nai
+
+console.log(map);
+
+op ->
+Map(2){
+    {name: 'Sohoz Shorol Simple programming hero} => {courseId: 'level1'},
+    {name: 'Sohoz Shorol Simple } => {courseId:next dev web 'level2'}
+}
+
+19.//code block
+const course1 ={name: "programming hero"};
+const course2 ={name: "Next level"};
+
+const map = new Map(); <- new keyword use kore Map generate korte hbe.
+map.set(course1, {courseId : "level1"});
+map.set(course2, {courseId : "level2"});
+
+console.log(map.keys()); <- only keys gulo dekha jabe 
+
+op ->
+[Map Iterator]{
+    {name: programming hero},
+    {name: next level web dev } 
+}
+
+20.//code block
+const course1 ={name: "programming hero"};
+const course2 ={name: "Next level"};
+
+const map = new Map(); <- new keyword use kore Map generate korte hbe.
+map.set(course1, {courseId : "level1"});
+map.set(course2, {courseId : "level2"});
+
+console.log([...map.keys()]); <- spread operator diye copy kora
+
+op ->
+[
+    {name: programming hero},
+    {name: next level web dev } 
+]
+
+
+21.//code block
+const course1 ={name: "programming hero"};
+const course2 ={name: "Next level"};
+
+const map = new Map(); <- new keyword use kore Map generate korte hbe.
+map.set(course1, {courseId : "level1"});
+map.set(course2, {courseId : "level2"});
+
+console.log([...map.values()]); <- spread operator diye copy kora
+
+op ->
+[
+    {courseId : "level1"},
+    {courseId : "level2"} 
+]
+
+22.//code block
+const course1 ={name: "programming hero"};
+const course2 ={name: "Next level"};
+
+const map = new Map(); <- new keyword use kore Map generate korte hbe.
+map.set(course1, {courseId : "level1"});
+map.set(course2, {courseId : "level2"});
+
+for(let key of map.keys()){  <- array akare na diye jevabe input deoa chilo sevabei output dibe.
+    console.log(key);  
+}
+
+op ->
+
+{name: "programming hero"};
+{name: "Next level"};
+
+23.//code block
+const course1 ={name: "programming hero"};
+const course2 ={name: "Next level"};
+
+const map = new Map(); <- new keyword use kore Map generate korte hbe.
+map.set(course1, {courseId : "level1"});
+map.set(course2, {courseId : "level2"});
+
+for(let key of map.keys()){  <- array akare na diye jevabe input deoa chilo sevabei output dibe.
+    key.name ="Sohoz Shorol Simple" + key.name;  
+}
+
+console.log(map);
+
+op ->
+Map(2){
+    {name: 'Sohoz Shorol Simple programming hero} => {courseId: 'level1'},
+    {name: 'Sohoz Shorol Simple } => {courseId:next dev web 'level2'}
+}
+
+24.//code block
+const course1 ={name: "programming hero"};
+const course2 ={name: "Next level"};
+
+const map = new Map(); <- new keyword use kore Map generate korte hbe.
+map.set(course1, {courseId : "level1"});
+map.set(course2, {courseId : "level2"});
+
+console.log(map.entries());
+
+op -> (array of object)
+[Map Entries]{
+    [{name: "programming hero"}, {courseId : "level1"}]  <- key er por => arrow chinho ase nai 
+    [{name: "Next level"}, {courseId : "level2"}]
+}
+
+
+matrix theke map or twoD array theke map 
+
+25.//code block
+
+const courses = [
+    ["programming hero", "level1"],
+    ["Next level", "level2"],
+];
+
+const map = new Map(courses);
+
+op -> 
+Map(2) {'programming hero' => 'level1', 'next level dev' => 'level2'} <- string akare
+
+26.//code block
+const course1 = {name: "programming hero};
+const course2 = { name: "Next level };
+const courses = [
+    [course1, "level1"],
+    [course1, "level2"],
+];
+
+const map = new Map(courses);
+
+console.log(map)
+
+op ->
+Map(2){
+    {name: 'programming hero'} => 'level1',
+    {name: 'next level web dev'} => 'level2'
+}
+
+
+
+
+
+
